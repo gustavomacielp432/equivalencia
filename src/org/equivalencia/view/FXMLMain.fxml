@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="1122.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.equivalencia.controller.MainController">
+  <tabs>
+    <Tab text="Equivalencia">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="596.0" prefWidth="917.0">
+               <children>
+                  <ListView fx:id="listViewId" layoutX="416.0" layoutY="49.0" prefHeight="502.0" prefWidth="666.0" />
+                  <ComboBox fx:id="comboBoxId" layoutX="13.0" layoutY="49.0" onAction="#cbSelect" prefHeight="25.0" prefWidth="388.0" />
+                  <TextArea fx:id="textFieldId" layoutX="13.0" layoutY="150.0" prefHeight="401.0" prefWidth="377.0" />
+                  <Text layoutX="13.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ementa" wrappingWidth="103.13671875" />
+                  <Text layoutX="414.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equivalências" wrappingWidth="77.13671875" />
+                  <Text layoutX="13.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disciplina" wrappingWidth="61.625" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
