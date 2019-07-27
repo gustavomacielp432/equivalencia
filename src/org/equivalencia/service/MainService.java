@@ -21,7 +21,7 @@ public class MainService {
 		OkHttpClient client = new OkHttpClient();
 
 		Request request = new Request.Builder()
-		  .url("http://"+Main.IP+":8080/hackathon/disciplina")
+		  .url("http://"+Main.IP+":8080/disciplina/todos")
 		  .get()
 		  .build();
 

@@ -57,9 +57,10 @@ public class MainController implements Initializable{
     	
     	List<MateriaOfertada> materiasOfertadas = materia.getMateriasOfertadas();
     	materia.setMateriasOfertadas(materiasOfertadas);
-    	obMateriaOfertada = FXCollections.observableArrayList(materiasOfertadas);
-    	
-    	listViewId.setItems(obMateriaOfertada);
+    	if(materiasOfertadas!=null)
+    		obMateriaOfertada = FXCollections.observableArrayList(materiasOfertadas);
+    	if(obMateriaOfertada!=null)
+    		listViewId.setItems(obMateriaOfertada);
     }
     
 	@Override

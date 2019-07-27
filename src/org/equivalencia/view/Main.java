@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
-	public static String IP ="18.220.64.165";
+	public static String IP ="3.130.179.162";
 	
 	@Override
 	public void start(Stage stage) {
